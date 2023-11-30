@@ -14,7 +14,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lint": "eslint 'src/**/*.{js,jsx, ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{ts,tsx, js,jsx}' --fix",
+    "format": "prettier 'src/**/*.{js,jsx, ts,tsx}' --write"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +54,14 @@
     "@types/node": "^20.10.0",
     "@types/react": "^18.2.39",
     "@types/react-dom": "^18.2.17",
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.1.0",
     "prop-types": "^15.8.1",
     "react-scripts": "5.0.1",
     "storybook": "^7.6.1",
