@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from './Button';
+import Button from './Button';
 import './header.css';
 
 type User = {
@@ -14,7 +14,7 @@ interface HeaderProps {
   onCreateAccount: () => void;
 }
 
-export function Header({
+export default function Header({
   user,
   onLogin,
   onLogout,

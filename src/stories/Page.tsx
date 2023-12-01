@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from './Header';
+import Header from './Header';
 
 import './page.css';
 
@@ -7,9 +7,8 @@ type User = {
   name: string;
 };
 
-export function Page() {
+export default function Page() {
   const [user, setUser] = React.useState<User>();
-  const x = null;
   return (
     <article>
       <Header
