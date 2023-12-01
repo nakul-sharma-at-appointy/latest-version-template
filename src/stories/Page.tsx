@@ -9,6 +9,7 @@ type User = {
 
 export function Page() {
   const [user, setUser] = React.useState<User>();
+  const x = null;
   return (
     <article>
       <Header
